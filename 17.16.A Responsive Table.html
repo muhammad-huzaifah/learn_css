@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Responsive Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {background-color: #f2f2f2}
+    </style>
+</head>
+<body>
+
+    <h2>Resposive Table</h2>
+
+    <p>A responsive table will display a horizontal scroll bar if the screen is too small to display the full content. Resize the browser window to see the effect:</p>
+    <p>To create a responsive table, add a container element (like div) with <strong>overflow-x:auto</strong> around the table element</p>
+
+    <div style="overflow-x: auto">
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Point</th>
+                <th>Point</th>
+                <th>Point</th>
+                <th>Point</th>
+                <th>Point</th>
+                <th>Point</th>
+                <th>Point</th>
+                <th>Point</th>
+                <th>Point</th>
+            </tr>
+            <tr>
+                <td>Muhammad</td>
+                <td>Huzaifah</td>
+                <td>40</td>
+                <td>40</td>
+                <td>40</td>
+                <td>40</td>
+                <td>40</td>
+                <td>40</td>
+                <td>40</td>
+                <td>40</td>
+                <td>40</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Rachmah</td>
+                <td>Octarina</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Khaira</td>
+                <td>Bishry</td>
+                <td>60</td>
+                <td>60</td>
+                <td>60</td>
+                <td>60</td>
+                <td>60</td>
+                <td>60</td>
+                <td>60</td>
+                <td>60</td>
+                <td>60</td>
+                <td>60</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
