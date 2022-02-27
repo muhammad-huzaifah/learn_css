@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute value selector 2</title>
+    <style>
+        [title~=flower] {
+            border: 5px solid yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS [attribute~="value] Selector</h2>
+    <p>All images with the title attribute containing the word "flower get a yellow border.</p>
+
+    <img src="klematis.jpg" title="klematis flower" width="150" height="113" alt="flower klematis">
+    <img src="img_flwr.gif" title="flower" alt="flower" width="224" height="162">
+    <img src="img_tree.png" alt="flower tree" title="tree" width="200" height="358">
+    
+</body>
+</html>
