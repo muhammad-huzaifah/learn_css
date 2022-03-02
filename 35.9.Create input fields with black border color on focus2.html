@@ -9,25 +9,27 @@
             padding: 12px 20px;
             margin: 8px 0;
             box-sizing: border-box;
-            border: 1px solid #555;
+            border: 3px solid #ccc;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
             outline: none;
         }
 
         input[type=text]:focus {
-           background-color: lightblue ;
+            border: 3px solid #555;
         }
     </style>
 </head>
 <body>
 
-    <h2>Input fileds with black border on :focus</h2>
+    <h2>Input fields with black border on :focus</h2>
 
-    <p>Here, the input field gets a black border color when it gets focus (clicked on). We have also added the CSS transition property to animate the border color (takes 0.5 second to change the color on focus</p>
+    <p>Here the input field gets a black border color when it gets focus (clicked on). We have also added the CSS transition property to animate the border color (takes 0.5 seconds to change the color on focus):</p>
 
     <form action="">
-        <label for="fname">First Name</label>
+        <label for="fname">First name</label>
         <input type="text" id="fname" name="fname">
-        <label for="lname">Last Name</label>
+        <label for="lname">Last name</label>
         <input type="text" id="lname" name="lname">
     </form>
 
