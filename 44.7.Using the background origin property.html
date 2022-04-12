@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Using the background origin property</title>
+    <style>
+        #example1 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url("img_flwr.gif");
+            background-repeat: no-repeat;
+        }
+
+        #example2 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url("img_flwr.gif");
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+
+        #example3 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url("img_flwr.gif");
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+
+        #example3 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url("img_flwr.gif");
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The background-origin Property</h1>
+
+    <p>No background-origin (padding-box is default):</p>
+    <div id="example1">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab blanditiis consequuntur deserunt, eligendi eveniet ex hic laboriosam magni minima modi necessitatibus nisi nostrum quidem quis soluta sunt totam veritatis.</p>
+        <p>t wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <p>background-origin: border-box:</p>
+    <div id="example2">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores commodi dolor dolores, eaque error est ipsum molestias nesciunt nulla quam quasi velit veritatis. Delectus ex ipsum maxime saepe sapiente.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <p>background-origin: content-box:</p>
+    <div id="example3">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae consequatur culpa, distinctio dolores eius ex facilis harum ipsum iste molestiae officiis omnis porro, quae quasi quidem quis repellendus similique!</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+</body>
+</html>
