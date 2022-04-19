@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Using text overflow with hover</title>
+    <style>
+        div.text {
+            white-space: nowrap;
+            width: 200px;
+            overflow: hidden;
+            border: 1px solid #000;
+        }
+
+        div.test:hover {
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Hover over the two divs below, to see the entire text.</p>
+    <div class="text test" style="text-overflow: ellipsis;">This is some long text that will not fit in the box</div>
+    <br>
+    <div class="text test" style="text-overflow: clip;">This is some long text that will not fit in the box.</div>
+
+</body>
+</html>
