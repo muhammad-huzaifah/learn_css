@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animation Fill Mode Backwards</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes example {
+            from {
+                top: 0px;
+                background-color: yellow;
+            }
+            to {top: 200px}
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Animation Fill Mode Backwards</h1>
+
+    <p>Let the div element get the style values set by the first keyframe before the anijmation starts (during the animation-delay period):</p>
+
+    <div></div>
+
+</body>
+</html>
