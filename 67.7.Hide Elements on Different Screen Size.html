@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-with, initial-scale=1">
+    <title>Hide Element on Different Screen Size</title>
+    <style>
+        div.example {
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 600px){
+            div.example {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Hide elements on Different Screen Size</h2>
+
+    <div class="example">Example DIV</div>
+
+    <p>When the browser's width is 600px wide or less, hide the div element. Resize the browser window to see the effect.</p>
+</body>
+</html>
