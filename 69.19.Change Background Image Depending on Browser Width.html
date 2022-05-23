@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Change Background Image Depending on Browser Width</title>
+    <style>
+        /* For width smaller than 400px: */
+        body {
+            background-repeat: no-repeat;
+            background-image: url("img_smallflower.jpg");
+        }
+
+        /* For width 400px and larger: */
+        @media only screen and (min-width: 400px) {
+            body {
+                background-image: url("img_flowers.jpg");
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <p style="margin-top: 360px">Resize the browser width and the background image will change at 400px.</p>
+
+</body>
+</html>
